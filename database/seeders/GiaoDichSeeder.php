@@ -1,0 +1,212 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class GiaoDichSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        DB::table('giao_diches')->delete();
+        DB::table('giao_diches')->truncate();
+
+        DB::table('giao_diches')->insert([
+            [
+                'id_nguoi_dung' => 1,
+                'id_vi_tai_khoan' => 1,
+                'id_danh_muc' => 1,
+                'id_phuong_thuc_thanh_toan' => 1,
+                'loai_giao_dich' => 0,
+                'so_tien' => 120000,
+                'ghi_chu' => 'Ăn sáng',
+                'ngay_giao_dich' => '2025-09-01',
+            ],
+            [
+                'id_nguoi_dung' => 2,
+                'id_vi_tai_khoan' => 2,
+                'id_danh_muc' => 2,
+                'id_phuong_thuc_thanh_toan' => 2,
+                'loai_giao_dich' => 0,
+                'so_tien' => 50000,
+                'ghi_chu' => 'Đi Grab',
+                'ngay_giao_dich' => '2025-09-02',
+            ],
+            [
+                'id_nguoi_dung' => 3,
+                'id_vi_tai_khoan' => 3,
+                'id_danh_muc' => 3,
+                'id_phuong_thuc_thanh_toan' => 3,
+                'loai_giao_dich' => 0,
+                'so_tien' => 750000,
+                'ghi_chu' => 'Tiền điện tháng 8',
+                'ngay_giao_dich' => '2025-09-03',
+            ],
+            [
+                'id_nguoi_dung' => 4,
+                'id_vi_tai_khoan' => 4,
+                'id_danh_muc' => 4,
+                'id_phuong_thuc_thanh_toan' => 5,
+                'loai_giao_dich' => 0,
+                'so_tien' => 320000,
+                'ghi_chu' => 'Mua áo trên Shopee',
+                'ngay_giao_dich' => '2025-09-05',
+            ],
+            [
+                'id_nguoi_dung' => 5,
+                'id_vi_tai_khoan' => 5,
+                'id_danh_muc' => 5,
+                'id_phuong_thuc_thanh_toan' => 6,
+                'loai_giao_dich' => 0,
+                'so_tien' => 150000,
+                'ghi_chu' => 'Xem phim CGV',
+                'ngay_giao_dich' => '2025-09-06',
+            ],
+            [
+                'id_nguoi_dung' => 1,
+                'id_vi_tai_khoan' => 2,
+                'id_danh_muc' => 6,
+                'id_phuong_thuc_thanh_toan' => 2,
+                'loai_giao_dich' => 1,
+                'so_tien' => 15000000,
+                'ghi_chu' => 'Lương tháng 8',
+                'ngay_giao_dich' => '2025-09-05',
+            ],
+            [
+                'id_nguoi_dung' => 2,
+                'id_vi_tai_khoan' => 3,
+                'id_danh_muc' => 7,
+                'id_phuong_thuc_thanh_toan' => 2,
+                'loai_giao_dich' => 1,
+                'so_tien' => 2000000,
+                'ghi_chu' => 'Thưởng dự án',
+                'ngay_giao_dich' => '2025-09-10',
+            ],
+            [
+                'id_nguoi_dung' => 3,
+                'id_vi_tai_khoan' => 1,
+                'id_danh_muc' => 8,
+                'id_phuong_thuc_thanh_toan' => 4,
+                'loai_giao_dich' => 1,
+                'so_tien' => 5000000,
+                'ghi_chu' => 'Bán hàng online',
+                'ngay_giao_dich' => '2025-09-12',
+            ],
+            [
+                'id_nguoi_dung' => 4,
+                'id_vi_tai_khoan' => 5,
+                'id_danh_muc' => 9,
+                'id_phuong_thuc_thanh_toan' => 7,
+                'loai_giao_dich' => 1,
+                'so_tien' => 800000,
+                'ghi_chu' => 'Lãi chứng khoán',
+                'ngay_giao_dich' => '2025-09-15',
+            ],
+            [
+                'id_nguoi_dung' => 5,
+                'id_vi_tai_khoan' => 4,
+                'id_danh_muc' => 10,
+                'id_phuong_thuc_thanh_toan' => 1,
+                'loai_giao_dich' => 1,
+                'so_tien' => 1000000,
+                'ghi_chu' => 'Tiền bố mẹ gửi',
+                'ngay_giao_dich' => '2025-09-20',
+            ],
+            [
+                'id_nguoi_dung' => 1,
+                'id_vi_tai_khoan' => 1,
+                'id_danh_muc' => 1,
+                'id_phuong_thuc_thanh_toan' => 1,
+                'loai_giao_dich' => 0,
+                'so_tien' => 90000,
+                'ghi_chu' => 'Cafe sáng',
+                'ngay_giao_dich' => '2025-09-07',
+            ],
+            [
+                'id_nguoi_dung' => 2,
+                'id_vi_tai_khoan' => 2,
+                'id_danh_muc' => 2,
+                'id_phuong_thuc_thanh_toan' => 2,
+                'loai_giao_dich' => 0,
+                'so_tien' => 120000,
+                'ghi_chu' => 'Đổ xăng',
+                'ngay_giao_dich' => '2025-09-08',
+            ],
+            [
+                'id_nguoi_dung' => 3,
+                'id_vi_tai_khoan' => 3,
+                'id_danh_muc' => 4,
+                'id_phuong_thuc_thanh_toan' => 5,
+                'loai_giao_dich' => 0,
+                'so_tien' => 450000,
+                'ghi_chu' => 'Mua giày thể thao',
+                'ngay_giao_dich' => '2025-09-09',
+            ],
+            [
+                'id_nguoi_dung' => 4,
+                'id_vi_tai_khoan' => 4,
+                'id_danh_muc' => 5,
+                'id_phuong_thuc_thanh_toan' => 6,
+                'loai_giao_dich' => 0,
+                'so_tien' => 200000,
+                'ghi_chu' => 'Đi karaoke',
+                'ngay_giao_dich' => '2025-09-11',
+            ],
+            [
+                'id_nguoi_dung' => 5,
+                'id_vi_tai_khoan' => 5,
+                'id_danh_muc' => 3,
+                'id_phuong_thuc_thanh_toan' => 3,
+                'loai_giao_dich' => 0,
+                'so_tien' => 600000,
+                'ghi_chu' => 'Tiền nước',
+                'ngay_giao_dich' => '2025-09-13',
+            ],
+            [
+                'id_nguoi_dung' => 1,
+                'id_vi_tai_khoan' => 2,
+                'id_danh_muc' => 6,
+                'id_phuong_thuc_thanh_toan' => 2,
+                'loai_giao_dich' => 1,
+                'so_tien' => 14000000,
+                'ghi_chu' => 'Lương tháng 7',
+                'ngay_giao_dich' => '2025-08-30',
+            ],
+            [
+                'id_nguoi_dung' => 2,
+                'id_vi_tai_khoan' => 3,
+                'id_danh_muc' => 8,
+                'id_phuong_thuc_thanh_toan' => 4,
+                'loai_giao_dich' => 1,
+                'so_tien' => 2500000,
+                'ghi_chu' => 'Bán hàng thêm',
+                'ngay_giao_dich' => '2025-09-14',
+            ],
+            [
+                'id_nguoi_dung' => 3,
+                'id_vi_tai_khoan' => 1,
+                'id_danh_muc' => 7,
+                'id_phuong_thuc_thanh_toan' => 2,
+                'loai_giao_dich' => 1,
+                'so_tien' => 1000000,
+                'ghi_chu' => 'Thưởng lễ',
+                'ngay_giao_dich' => '2025-09-16',
+            ],
+            [
+                'id_nguoi_dung' => 4,
+                'id_vi_tai_khoan' => 5,
+                'id_danh_muc' => 9,
+                'id_phuong_thuc_thanh_toan' => 7,
+                'loai_giao_dich' => 1,
+                'so_tien' => 1200000,
+                'ghi_chu' => 'Đầu tư coin',
+                'ngay_giao_dich' => '2025-09-18',
+            ],
+        ]);
+    }
+}
